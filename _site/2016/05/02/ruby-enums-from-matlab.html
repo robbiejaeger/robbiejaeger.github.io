@@ -8,9 +8,7 @@
 <body>
   <h3>Your Blog Name</h3>
   <div>
-    <ul>
-      <li><a href="/">Home</a></li>
-    </ul>
+    <a href="/">Home</a>
   </div>
   <div class="container">
 
@@ -28,11 +26,7 @@
   readable, and elegant. As a starting points, let's look at an example MATLAB script with a for loop for calculating the sum of
   the first 10 integers multiplied by two.</p>
 
-<code>n = 10;
-  s = 0;
-  for i=1:n
-  s = s + i*2;
-  end</code>
+<code>n = 10; <br> s = 0; <br> for i=1:n <br> s = s + i*2; <br> end</code>
 
 <p>One issue of this loop is the index, i, which is now a global variable in the script and resides in the MATLAB base workspace.
   If you are not careful and reuse i for another for loop later in the script, your indexing can have unexpected behavior. To get
@@ -50,9 +44,9 @@
 <p>One line! After years of writing MATLAB scripts, it was hard for me to shake off old MATLAB habits and use enumerables in this way.
   Let's go through each chunck of the code and what each returns.</p>
 <ul>
-  <li><code>(1..10)</code> - range object</li>
-  <li><code>to_a</code> - creates an array from the range object: <code>[1,2,3,4,5,6,7,8,9,10]</code></li>
-  <li><code>map{|num| num*2}</code> - takes each number from the array and multiplies it, then returns a new array:
+  <li><code>(1..10)</code> - returns a range object of numbers from 1 through 10</li>
+  <li><code>to_a</code> - returns an array from the range object: <code>[1,2,3,4,5,6,7,8,9,10]</code></li>
+  <li><code>map{|num| num*2}</code> - each number in the array is multiplied by two, then map returns the new multiplied array:
     <code>[2,4,6,8,10,12,14,16,18,20]</code></li>
   <li><code>reduce(:+)</code> - sums the elements of the array</li>
 </ul>
@@ -60,12 +54,13 @@
 <p>Strung all together, the one line of code returns 110, as expected. There is an even shorter way to find the sum using only reduce
   instead of map, but we can save that for another day.</p>
 
-<p></p>
-
-<img id="kitten" src="http://theheightsanimalhospital.com/clients/15389/images/playful-kitten-6683.jpg" alt="kitten">
-
 
     </div>
+
+    <footer class="about-author">
+      <img class="author-photo" src="/assets/turing_headshot_for_blog.png" style="width:60px;height:65px;">
+      <p>This is the footer. About me...</p>
+    </footer>
   </body>
 </html>
 
