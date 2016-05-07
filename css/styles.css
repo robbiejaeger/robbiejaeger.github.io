@@ -1,9 +1,18 @@
-header {
-  background-color: #666666;
-  margin: 0 auto 25px;
-  padding: 5px;
-  width: 50%;
+.main-header {
+  border-bottom: 2px solid #ccc;
+  padding: 5px 50px;
+  margin: 0 auto 50px;
+  width: 75%;
   height: 100px;
+}
+
+.post-header {
+  margin: auto;
+  width: 55%;
+}
+
+.nav-bar {
+  list-style: none;
 }
 
 h1 {
@@ -14,7 +23,7 @@ h1 {
 h3 {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 30px;
-  color: #ffffff;
+  color: black;
   text-align: center;
 }
 
@@ -27,14 +36,14 @@ body {
   background-color: #f7f7f7;
 }
 
-.container {
-  background-color: #ffffff;
-  margin: auto;
+.post-content {
+  background-color: #fff;
+  margin: 0 auto 25px auto;
   padding: 25px 50px;
   width: 50%;
 }
 
-.container p {
+.post-content p {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 	font-size: 16px;
 	font-style: normal;
@@ -44,7 +53,8 @@ body {
 }
 
 .about-author {
-  background-color: #eeeeee;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   margin: 10px auto 25px auto;
   width: 50%;
   height: 75px;
@@ -64,4 +74,8 @@ body {
 .author-photo {
   float: left;
   margin-right: 20px;
+}
+
+.github-link {
+  float: right;
 }
